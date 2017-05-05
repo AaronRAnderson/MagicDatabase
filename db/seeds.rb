@@ -16,8 +16,8 @@
     converted_manacost: 5,
       color: "Ruby",
       description: "Maecenas faucibus mollis interdum.",
-      front_image: "http://placehold.it/300x416",
-      back_image: "https://upload.wikimedia.org/wikipedia/en/a/aa/Magic_the_gathering-card_back.jpg"
+      front_image: "http://placehold.it/223x310",
+      back_image: "https://upload.wikimedia.org/wikipedia/en/a/aa/Magic_the_gathering-card_back.jpg"  
     )
 
 end

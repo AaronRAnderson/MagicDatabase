@@ -9,6 +9,10 @@
   <strong>Color:</strong>
   <%= @card.color %>
 </p>
+<p>
+  <strong>Converted manacost:</strong>
+  <%= @card.converted_manacost %>
+</p>
 
 <p>
   <strong>Description:</strong>
@@ -17,18 +21,14 @@
 
 <p>
   <strong>Front image:</strong>
-  <%= @card.front_image %>
+  <%= image_tag @card.front_image, width: 223, height: 310 %>
 </p>
 
 <p>
   <strong>Back image:</strong>
-  <%= @card.back_image %>
+  <%= image_tag @card.back_image, width: 223, height: 310 %>
 </p>
 
-<p>
-  <strong>Converted manacost:</strong>
-  <%= @card.converted_manacost %>
-</p>
 
 <%= link_to 'Edit', edit_card_path(@card) %> |
 <%= link_to 'Back', cards_path %>
