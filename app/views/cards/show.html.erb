@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @card.name %>
+</p>
+
+<p>
+  <strong>Color:</strong>
+  <%= @card.color %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @card.description %>
+</p>
+
+<p>
+  <strong>Front image:</strong>
+  <%= @card.front_image %>
+</p>
+
+<p>
+  <strong>Back image:</strong>
+  <%= @card.back_image %>
+</p>
+
+<p>
+  <strong>Converted manacost:</strong>
+  <%= @card.converted_manacost %>
+</p>
+
+<%= link_to 'Edit', edit_card_path(@card) %> |
+<%= link_to 'Back', cards_path %>
