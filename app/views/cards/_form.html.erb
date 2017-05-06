@@ -22,6 +22,11 @@
   </div>
 
   <div class="field">
+    <%= form.label :converted_manacost %>
+    <%= form.number_field :converted_manacost, id: :card_converted_manacost %>
+  </div>
+
+  <div class="field">
     <%= form.label :description %>
     <%= form.text_area :description, id: :card_description %>
   </div>
@@ -34,11 +39,6 @@
   <div class="field">
     <%= form.label :back_image %>
     <%= form.text_area :back_image, id: :card_back_image, value: "https://upload.wikimedia.org/wikipedia/en/a/aa/Magic_the_gathering-card_back.jpg" %>
-  </div>
-
-  <div class="field">
-    <%= form.label :converted_manacost %>
-    <%= form.number_field :converted_manacost, id: :card_converted_manacost %>
   </div>
 
   <div class="actions">

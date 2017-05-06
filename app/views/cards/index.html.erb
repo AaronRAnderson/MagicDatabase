@@ -8,11 +8,11 @@
     <tr>
       <th>Name</th>
       <th>Color</th>
-      <th>Description</th>
-      <th>Front image</th>
-      <th>Back image</th>
       <th>Converted manacost</th>
-      <th colspan="3"></th>
+      <th>Description</th>
+      <th>Front</th>
+      <th>Back</th>
+      <th colspan="1"></th>
     </tr>
   </thead>
 
@@ -21,10 +21,10 @@
       <tr>
         <td><%= card.name %></td>
         <td><%= card.color %></td>
+        <td><%= card.converted_manacost %></td>
         <td><%= card.description %></td>
         <td><%= image_tag card.front_image, width: 223, height: 310 %></td>
         <td><%= image_tag card.back_image, width: 223, height: 310 %></td>
-        <td><%= card.converted_manacost %></td>
         <td><%= link_to 'Show', card %></td>
         <td><%= link_to 'Edit', edit_card_path(card) %></td>
         <td><%= link_to 'Destroy', card, method: :delete, data: { confirm: 'Are you sure?' } %></td>
