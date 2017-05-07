@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170505013448) do
+ActiveRecord::Schema.define(version: 20170506231205) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -24,6 +24,9 @@ ActiveRecord::Schema.define(version: 20170505013448) do
     t.integer "converted_manacost"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "side", default: 0
+    t.string "cardtype", default: "card"
+    t.string "subtype", default: "magic"
   end
 
 end

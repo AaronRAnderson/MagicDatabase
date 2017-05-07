@@ -11,7 +11,6 @@
       <th>Converted manacost</th>
       <th>Description</th>
       <th>Front</th>
-      <th>Back</th>
       <th colspan="1"></th>
     </tr>
   </thead>
@@ -24,10 +23,8 @@
         <td><%= card.converted_manacost %></td>
         <td><%= card.description %></td>
         <td><%= image_tag card.front_image, width: 223, height: 310 %></td>
-        <td><%= image_tag card.back_image, width: 223, height: 310 %></td>
-        <td><%= link_to 'Show', card %></td>
-        <td><%= link_to 'Edit', edit_card_path(card) %></td>
-        <td><%= link_to 'Destroy', card, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', card %><br/><%= link_to 'Edit', edit_card_path(card) %>
+        <%= link_to 'Destroy', card, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>

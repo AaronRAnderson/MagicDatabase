@@ -27,6 +27,16 @@
   </div>
 
   <div class="field">
+    <%= form.label :cardtype %>
+    <%= form.text_field :cardtype, id: :card_cardtype %>
+  </div>
+
+  <div class="field">
+    <%= form.label :subtype %>
+    <%= form.text_field :subtype, id: :card_subtype %>
+  </div>
+
+  <div class="field">
     <%= form.label :description %>
     <%= form.text_area :description, id: :card_description %>
   </div>
@@ -38,7 +48,7 @@
 
   <div class="field">
     <%= form.label :back_image %>
-    <%= form.text_area :back_image, id: :card_back_image, value: "https://upload.wikimedia.org/wikipedia/en/a/aa/Magic_the_gathering-card_back.jpg" %>
+    <%= form.text_area :back_image, id: :card_back_image, value: default_back_image %>
   </div>
 
   <div class="actions">

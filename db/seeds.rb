@@ -10,7 +10,7 @@
 
 
 
-9.times do |card|
+4.times do |card|
   Card.create!(
     name: "Card name: #{card}",
     converted_manacost: 5,

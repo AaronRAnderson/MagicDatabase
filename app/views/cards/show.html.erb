@@ -15,13 +15,27 @@
 </p>
 
 <p>
+  <strong>Type:</strong>
+  <%= @card.cardtype %> -
+  <%= @card.subtype %>
+
+</p>
+
+<p>
   <strong>Description:</strong>
   <%= @card.description %>
 </p>
 
 <p>
-  <%= image_tag @card.front_image, width: 223, height: 310 %>
-  <%= image_tag @card.back_image, width: 223, height: 310 %>
+  <%= link_to "Flip Card", flip_card_path(@card) %>
+</p>
+
+
+
+
+<p>
+  <%= image_tag @card.front_image, width: 223, height: 310 if @card.side == 'front' %>
+  <%= image_tag @card.back_image, width: 223, height: 310  if @card.side == 'back' %>
 </p>
 
 
