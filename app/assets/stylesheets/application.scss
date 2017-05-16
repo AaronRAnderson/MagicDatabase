@@ -1,0 +1,37 @@
+@import "bootstrap";
+
+.page {
+  margin-left: 7px;
+}
+
+
+.body {
+
+  display: inline-flex;
+  text-align: left;
+}
+
+.mtg-card {
+  padding: 3px;
+  text-align: center;
+  width: 10.5rem;
+}
+.heading {
+  margin-bottom: 15px;
+
+}
+.btn-magic {
+  text-decoration: none;
+  padding: 10px;
+  width: 55.75;
+  height: 77.5;
+  border: 2px black solid;
+  border-radius: 6px;
+  background-color: 	#735210;
+  text-decoration-color: 	#4A5999;
+  text-shadow:
+    -.25px -.25px 0 #AF5D35,
+    .25px -.25px 0 #000,
+    -.25px .25px 0 #AF5D35,
+    .25px .25px 0 #000;
+}

@@ -1,34 +1,15 @@
 <p id="notice"><%= notice %></p>
+<div class="page">  
+  <div class="heading">
+    <h1>Cards</h1>
+    <%= link_to 'New card', new_card_path, class: 'btn btn-magic' %>
+  </div>
 
-<h1>Cards</h1>
-<%= link_to 'New Card', new_card_path %>
-
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Color</th>
-      <th>Converted manacost</th>
-      <th>Description</th>
-      <th>Front</th>
-      <th colspan="1"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @cards.each do |card| %>
-      <tr>
-        <td><%= card.name %></td>
-        <td><%= card.color %></td>
-        <td><%= card.converted_manacost %></td>
-        <td><%= card.description %></td>
-        <td><%= image_tag card.front_image, width: 223, height: 310 %></td>
-        <td><%= link_to 'Show', card %><br/><%= link_to 'Edit', edit_card_path(card) %>
-        <%= link_to 'Destroy', card, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
+  <% @cards.each do |card| %>
+    <div class="body">
+      <div class="mtg-card">
+        <%= link_to (image_tag card.front_image, width: 167.25, height: 232.5), card %>
+      </div>
+    </div>
+  <% end %>
+</div>
