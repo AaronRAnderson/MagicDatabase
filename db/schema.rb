@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170506231205) do
+ActiveRecord::Schema.define(version: 20170516034851) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -27,6 +27,7 @@ ActiveRecord::Schema.define(version: 20170506231205) do
     t.integer "side", default: 0
     t.string "cardtype", default: "card"
     t.string "subtype", default: "magic"
+    t.integer "how_many"
   end
 
 end

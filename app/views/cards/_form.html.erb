@@ -27,6 +27,11 @@
   </div>
 
   <div class="field">
+    <%= form.label :how_many %>
+    <%= form.number_field :how_many, id: :how_many %>
+  </div>
+
+  <div class="field">
     <%= form.label :cardtype %>
     <%= form.text_field :cardtype, id: :card_cardtype %>
   </div>
