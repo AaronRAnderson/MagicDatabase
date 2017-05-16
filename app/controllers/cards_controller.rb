@@ -2,7 +2,7 @@ class CardsController < ApplicationController
   before_action :set_card, only: [:show, :edit, :update, :destroy, :flip]
 
   def index
-    @cards = Card.all
+    @cards = Card.all.sort
   end
 
   def show
@@ -57,6 +57,7 @@ class CardsController < ApplicationController
     end
     redirect_to @card
   end
+
 
   private
 
