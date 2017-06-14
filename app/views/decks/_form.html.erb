@@ -1,0 +1,6 @@
+<%= form_with(model: deck, local: true) do |form| %>
+  <div>
+    <%= form.label :name %>
+    <%= form.text_field :name, id: :deck_name %>
+  </div>
+<% end %>

@@ -3,6 +3,9 @@ module CardsHelper
       "https://upload.wikimedia.org/wikipedia/en/a/aa/Magic_the_gathering-card_back.jpg"
   end
 
+  # def transform card
+  #   back_image
+  # end
 
   def cards_in_deck
     deckCount = 0
@@ -13,13 +16,11 @@ module CardsHelper
   end
 
   def draw_card
-    deck = rand(1..@cards.size)
-      deck.times do |card|
-        @cards.each do |c|
-          if c.id == deck
-            return c.id
-          end
-        end
+    draw = rand(1..@cards.size)
+      @cards.each do |c|
+        if c.id == draw
+          return c.id
       end
+    end
   end
 end

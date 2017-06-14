@@ -1,0 +1,7 @@
+<h1><%= @deck.name %></h1>
+<%= link_to "Decks", decks_path %>
+<div>
+  <% @deck.cards.each do |card| %>
+    <%= link_to (image_tag card.front_image, width: 167.25, height: 232.5), card %>
+  <% end %>
+</div>

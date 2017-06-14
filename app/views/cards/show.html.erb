@@ -1,5 +1,4 @@
 <p id="notice"><%= notice %></p>
-
 <p>
   <strong>Name:</strong>
   <%= @card.name %>
@@ -34,12 +33,9 @@
   <%= link_to "Flip Card", flip_card_path(@card) %>
 </p>
 
-
-
-
 <p>
   <%= image_tag @card.front_image, width: 223, height: 310 if @card.side == 'front' %>
-  <%= image_tag @card.back_image, width: 223, height: 310  if @card.side == 'back' %>
+  <%= image_tag @card.back_image, width: 223, height: 310 if @card.side == 'back' %>
 </p>
 
 

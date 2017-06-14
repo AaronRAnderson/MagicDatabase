@@ -4,6 +4,7 @@
     <h1>Cards: <%= cards_in_deck %></h1>
     <%= link_to 'New card', new_card_path, class: 'btn btn-magic' %>
     <%= link_to 'Draw', card_path(draw_card), class: 'btn btn-magic' %>
+    <%= link_to 'Deck', decks_path, class: 'btn btn-magic' %>
   </div>
 
   <% @cards.each do |card| %>

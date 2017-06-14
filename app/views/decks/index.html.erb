@@ -1,1 +1,6 @@
-<%= link_to 'Deck', card_path(draw_card), class: 'btn btn-magic' %>
+<div class="container">
+  <h1><%= link_to 'New Deck', new_deck_path %></h1>
+  <% @decks.each do |deck| %>
+    <p><%= link_to deck.name, deck_path(deck) %></p>
+  <% end %>
+</div>

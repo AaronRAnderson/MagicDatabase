@@ -53,8 +53,18 @@
 
   <div class="field">
     <%= form.label :back_image %>
-    <%= form.text_area :back_image, id: :card_back_image, value: default_back_image %>
+    <%= form.text_area :back_image, id: :card_back_image, value: card.back_image  %>
   </div>
+
+  <div class="field">
+  <%= form.label :deck_id %>
+  <%= form.collection_select(:deck_id, Deck.all, :id, :name,
+                            {
+                              include_blank: true
+                            },
+                          )
+  %>
+</div>
 
   <div class="actions">
     <%= form.submit %>
