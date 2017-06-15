@@ -1,6 +1,14 @@
 <div class="container">
-  <h1><%= link_to 'New Deck', new_deck_path %></h1>
-  <% @decks.each do |deck| %>
-    <p><%= link_to deck.name, deck_path(deck) %></p>
-  <% end %>
+  <div class="page">
+    <div class="heading">
+      <%= link_to 'Cards', cards_path, class: 'btn btn-magic' %>
+      <%= link_to 'New Deck', new_deck_path, class: 'btn btn-magic' %>
+      <%= link_to 'New card', new_card_path, class: 'btn btn-magic' %>
+
+      <%= link_to 'Archenemy', archenemy_deck_path(@decks), class: 'btn btn-magic' %>
+    </div>
+    <% @decks.each do |deck| %>
+      <p><%= link_to deck.name, deck_path(deck) %></p>
+    <% end %>
+  </div>
 </div>

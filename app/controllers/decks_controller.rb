@@ -5,6 +5,10 @@ class DecksController < ApplicationController
     @decks = Deck.all.sort
   end
 
+  def archenemy
+    @decks = Deck.archenemy
+  end
+
   def show
   end
 

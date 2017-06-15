@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
-  resources :decks
+  resources :decks do
+    member do
+      get :archenemy
+    end
+  end
   resources :cards do
     member do
       get :flip

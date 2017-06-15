@@ -7,9 +7,9 @@ module CardsHelper
   #   back_image
   # end
 
-  def cards_in_deck
+  def cards_in_deck deck
     deckCount = 0
-    @cards.each do |card|
+    deck.cards.each do |card|
       deckCount += card.how_many
     end
     deckCount

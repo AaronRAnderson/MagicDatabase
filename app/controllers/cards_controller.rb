@@ -75,6 +75,8 @@ class CardsController < ApplicationController
                                     :side,
                                     :cardtype,
                                     :subtype,
-                                    :how_many)
+                                    :how_many,
+                                    :deck_id
+                                    )
     end
 end

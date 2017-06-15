@@ -30,7 +30,7 @@
 </p>
 
 <p>
-  <%= link_to "Flip Card", flip_card_path(@card) %>
+  <%= link_to "Flip Card", flip_card_path(@card) unless @card.back_image == "" %>
 </p>
 
 <p>

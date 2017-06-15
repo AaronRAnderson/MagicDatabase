@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
 <div class="page">
   <div class="heading">
-    <h1>Cards: <%= cards_in_deck %></h1>
+    <h1>Cards: <%= @cards.count %></h1>
     <%= link_to 'New card', new_card_path, class: 'btn btn-magic' %>
     <%= link_to 'Draw', card_path(draw_card), class: 'btn btn-magic' %>
     <%= link_to 'Deck', decks_path, class: 'btn btn-magic' %>
