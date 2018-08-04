@@ -21,4 +21,4 @@
 #keep my keys secret
 
 /config/secrets.yml
-
+/.env
